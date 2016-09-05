@@ -1,5 +1,6 @@
 ---
-title: VUM
+title: About
+order: 0
 ---
 
 # vue-mobile - In Development
