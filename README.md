@@ -2,7 +2,7 @@
 
 ## dev
 
-`hexo server -g`
+`hexo server -w`
 
 ## deploy
 
