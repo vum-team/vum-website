@@ -1,8 +1,10 @@
 # Header
 menu:
   Home: /
-  Archives: /archives
-rss: /atom.xml
+  Demos: http://demo.getvum.com
+  Github: https://github.com/vum-team/vum
+  # Archives: /archives
+# rss: /atom.xml
 
 # Content
 excerpt_link: Read More
