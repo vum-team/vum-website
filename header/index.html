@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Header | VUM</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="All Header ComponentsHeader contains five components: Header, SecondHeader, SimpleHeader, HeaderTitle, HeaderLink.
+1import &amp;#123; Header, SecondHeader, SimpleHeader, Title, Link &amp;#125; from &apos;component">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Header">
+<meta property="og:url" content="http://getvum.com/header/index.html">
+<meta property="og:site_name" content="VUM">
+<meta property="og:description" content="All Header ComponentsHeader contains five components: Header, SecondHeader, SimpleHeader, HeaderTitle, HeaderLink.
+1import &amp;#123; Header, SecondHeader, SimpleHeader, Title, Link &amp;#125; from &apos;component">
+<meta property="og:updated_time" content="2016-09-07T08:13:36.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Header">
+<meta name="twitter:description" content="All Header ComponentsHeader contains five components: Header, SecondHeader, SimpleHeader, HeaderTitle, HeaderLink.
+1import &amp;#123; Header, SecondHeader, SimpleHeader, Title, Link &amp;#125; from &apos;component">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">VUM</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="http://demo.getvum.com">Demos</a>
+        
+          <a class="main-nav-link" href="https://github.com/vum-team/vum">Github</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://getvum.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-header" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Header
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="All-Header-Components"><a href="#All-Header-Components" class="headerlink" title="All Header Components"></a>All Header Components</h2><p>Header contains five components: <code>Header</code>, <code>SecondHeader</code>, <code>SimpleHeader</code>, <code>HeaderTitle</code>, <code>HeaderLink</code>.</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">import</span> &#123; Header, SecondHeader, SimpleHeader, Title, Link &#125; <span class="keyword">from</span> <span class="string">'components/header'</span></div></pre></td></tr></table></figure>
+<ul>
+<li><code>Header</code> is fixed on the top of screen, you can put <code>Title</code> and <code>Link</code> in header</li>
+<li><code>SecondHeader</code> is fixed on the top of screen, but comes after <code>Header</code>, any valid component can be put in <code>SecondHeader</code></li>
+<li><code>SimpleHeader</code> is a predefined <code>Header</code> with a <code>Title</code> and an optional back link</li>
+<li><code>HeaderTitle</code> is the title of the page, center in <code>Header</code>. Every <code>Header</code> should contain a <code>Title</code></li>
+<li><code>HeaderLink</code> is a text link or icon link in header.</li>
+</ul>
+<h2 id="Header-Layout"><a href="#Header-Layout" class="headerlink" title="Header Layout"></a>Header Layout</h2><p>Layout of header like this:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">page-header</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">header-link</span> <span class="attr">:left</span>=<span class="string">"true"</span> <span class="attr">:edge</span>=<span class="string">"true"</span> <span class="attr">v-back-link</span>&gt;</span><span class="tag">&lt;<span class="name">icon</span> <span class="attr">icon</span>=<span class="string">"back"</span>&gt;</span><span class="tag">&lt;/<span class="name">icon</span>&gt;</span>Back<span class="tag">&lt;/<span class="name">header-link</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">header-link</span>&gt;</span>About<span class="tag">&lt;/<span class="name">header-link</span>&gt;</span></div><div class="line">    <span class="tag">&lt;<span class="name">header-title</span>&gt;</span>VUM<span class="tag">&lt;/<span class="name">header-title</span>&gt;</span></div><div class="line">  <span class="tag">&lt;/<span class="name">page-header</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="keyword">import</span> &#123; Header, HeaderLink, HeaderTitle&#125; <span class="keyword">from</span> <span class="string">'../components/header'</span></div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<h2 id="Header-Link"><a href="#Header-Link" class="headerlink" title="Header Link"></a>Header Link</h2><p>Header Link could only be used in <code>Header</code></p>
+<p>Usage:</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"><span class="tag">&lt;<span class="name">template</span>&gt;</span></div><div class="line">  <span class="tag">&lt;<span class="name">header-link</span> <span class="attr">:left</span>=<span class="string">"true"</span> <span class="attr">:edge</span>=<span class="string">"true"</span> <span class="attr">v-back-link</span>&gt;</span><span class="tag">&lt;<span class="name">icon</span> <span class="attr">icon</span>=<span class="string">"back"</span>&gt;</span><span class="tag">&lt;/<span class="name">icon</span>&gt;</span>Back<span class="tag">&lt;/<span class="name">header-link</span>&gt;</span></div><div class="line"><span class="tag">&lt;/<span class="name">template</span>&gt;</span></div><div class="line"></div><div class="line"><span class="tag">&lt;<span class="name">script</span>&gt;</span><span class="javascript"></span></div><div class="line"><span class="keyword">import</span> &#123; HeaderLink &#125; <span class="keyword">from</span> <span class="string">'../components/header'</span></div><div class="line"><span class="keyword">export</span> <span class="keyword">default</span> &#123;</div><div class="line">  components: &#123;</div><div class="line">    <span class="string">'header-link'</span>: HeaderLink</div><div class="line">  &#125;</div><div class="line">&#125;</div><div class="line"><span class="tag">&lt;/<span class="name">script</span>&gt;</span></div></pre></td></tr></table></figure>
+<p>Props:</p>
+<table>
+<thead>
+<tr>
+<th>Prop</th>
+<th>Type</th>
+<th>Default</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>left</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>false</td>
+<td>float left in <code>Header</code></td>
+</tr>
+<tr>
+<td><code>edge</code></td>
+<td><code>Boolean</code></td>
+<td><code>false</code></td>
+<td>false</td>
+<td>more close to the edge of <code>Header</code></td>
+</tr>
+</tbody>
+</table>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://getvum.com/header/" data-id="cisspdfo00002k06wh4zxpygf" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/footer/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Footer
+        
+      </div>
+    </a>
+  
+  
+    <a href="/page/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Page</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+  <div class="widget-wrap">
+    <h3 class="widget-title">VUM</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/vum/">About</a>
+          </li>
+        
+          <li>
+            <a href="/install/">Install</a>
+          </li>
+        
+          <li>
+            <a href="/page/">Page</a>
+          </li>
+        
+          <li>
+            <a href="/header/">Header</a>
+          </li>
+        
+          <li>
+            <a href="/footer/">Footer</a>
+          </li>
+        
+          <li>
+            <a href="/button/">Button</a>
+          </li>
+        
+          <li>
+            <a href="/list/">List</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</aside>
+
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2016 言川<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="http://demo.getvum.com" class="mobile-nav-link">Demos</a>
+  
+    <a href="https://github.com/vum-team/vum" class="mobile-nav-link">Github</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
