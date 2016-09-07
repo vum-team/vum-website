@@ -1,6 +1,6 @@
 ---
 title: Page
-order: 1
+order: 2
 ---
 
 ## Page Layout
@@ -40,14 +40,7 @@ Header is a fixed bar at the top of the screen that contains Page Title and some
 </template>
 
 <script>
-  import { Header, Link, Title } from '../components/header'
-  export default {
-    components: {
-      'page-header': header,
-      'header-link': Link,
-      'header-title': Title
-    }
-  }
+  import { Header, HeaderLink, HeaderTitle } from '../components/header'
 </script>
 ```
 
@@ -90,7 +83,3 @@ Footer is a tab bar fixed at the bottom of the screen.
 ```
 
 It's recommend to use tab instead of router to change view when click footer.
-
-## Second Header and Second Footer
-
-Refer to [demos](http://demo.getvum.com) please for how to use `SecondHeader` and `SecondFooter` please.
