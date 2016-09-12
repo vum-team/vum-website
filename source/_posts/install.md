@@ -50,6 +50,28 @@ Add these code in webpack loaders
 ## Import Vum and Enjoy it
 
 ``` bash
+import Vue from 'vue'
+import Router from 'vue-router'
+
+import Vum from 'vum' // import vum
+
+Vue.use(Router)
+Vue.use(Vum) // use vum
+
+let App = Vue.extend()
+
+let router = new Router()
+
+router.map({
+  // ...
+})
+
+router.start(App, '#app')
+
+Vum.router(router)  // config router instance by vum
+```
+
+``` bash
 <template>
   <div class="page">
     <simple-header title="my-vum" :back-link="true"></simple-header>
