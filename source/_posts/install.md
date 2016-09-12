@@ -78,4 +78,4 @@ export default {
 
 ## use template
 
-Don't want to config vum by yourself?  You can just clone the [vum-project-template](), and start write your code immidiately.
+Don't want to config vum by yourself?  You can just clone the [vum-project-template](https://github.com/vum-team/vum-project-template), and start write your code immidiately.
