@@ -3,11 +3,11 @@ title: About
 order: 0
 ---
 
-# vue-mobile - V0.1.0
+# vue-mobile - V0.1.1
 
 > An UI Framework build with Vue.js
 
-vue-mobile is in development now, `V0.1.0` version has been released at `2016-09-11`
+vue-mobile is in development now, `V0.1.1` version has been released at `2016-10-23`
 
 Click [http://demo.getvum.com/#!/](http://demo.getvum.com/#!/)  or scan vcode to see live demos:
 
